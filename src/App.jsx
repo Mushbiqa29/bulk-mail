@@ -1,20 +1,20 @@
-import React from 'react'
-import Mail from'./components/mail';
-import { useState } from 'react';
-import Video  from './assets/loader.mp4'
-import Mobilevideo  from './assets/loader_phone.mp4'
+import Loginuser from './pages/loginuser'
+import{BrowserRouter,Routes,Route} from 'react-router-dom'
+import Signup from './pages/signup'
+import Loginadmin from './pages/loginadmin'
+import Admin from './pages/admindashboard'
+import Home  from './pages/home';
 export const App = () => {
-  const[isvideoplay,setisVideoEnd]=useState(true)
+ 
   return (
-
-        <div className='text-center'>
-          {
-            isvideoplay?(<><video src={Video} autoPlay muted preload='auto' className='w-full h-screen object-cover bg-no-repeat hidden md:block ' onEnded={()=>{
-setisVideoEnd(false)
-            }}></video><video src={Mobilevideo} autoPlay  muted  preload='auto'className='w-full h-screen object-cover bg-no-repeat block md:hidden ' onEnded={()=>{
-setisVideoEnd(false)
-            }}></video></>) : <Mail/>
-          }
-    </div>
+    <BrowserRouter>
+<Routes>
+  <Route path="/" element={<Loginuser/>}/>
+    <Route path="/signup" element={<Signup/>}/>
+    <Route path="/loginadmin" element={<Loginadmin/>}/>
+    <Route path="/admin" element={<Admin/>}/>
+    <Route path="/home" element={<Home/>}/>
+</Routes>
+    </BrowserRouter>
   )
 }
