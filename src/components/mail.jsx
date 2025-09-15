@@ -79,7 +79,7 @@ const Mail = () => {
 
   return (
     <div>
-      <div className='max-w-4xl mx-auto bg-white rounded-lg shadow-2xl p-8 hover-effect'>
+      <div className='max-w-4xl mx-auto bg-white rounded-lg shadow-2xl p-8 '>
         <div className='flex justify-between items-center mb-4'>
           <div className='text-lg font-semibold text-primary font-neue-machina'>
             {user ? `Hi ${user.name}!` : 'Loading...'}
