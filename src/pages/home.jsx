@@ -56,7 +56,7 @@ useEffect(() => {
         </div>
       ) : (
        <div className='min-h-screen bg-gradient-to-br from-primary via-accent4 to-accent3 p-6 '>
-      <div className='max-w-6xl mx-auto bg-hidden  rounded-lg shadow-2xl p-8  scale-[0.7]'>
+      <div className='max-w-6xl mx-auto bg-hidden  rounded-lg shadow-2xl p-8  scale-y-[0.7]'>
         <div className='flex justify-end  items-center mb-6'>
           <button
             className='btn-3d py-2 px-6 bg-primary text-black font-semibold rounded-lg hover:bg-primary-dark transition-colors'
