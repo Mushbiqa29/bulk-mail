@@ -20,7 +20,7 @@ const Loginadmin = () => {
 
   return (
     <div className='min-h-screen flex items-center justify-center bg-gradient-to-br from-secondary to-accent4 p-4'>
-      <div className='bg-white rounded-lg shadow-2xl p-8 w-full max-w-md hover-effect'>
+      <div className='bg-white rounded-lg shadow-2xl p-8 w-full max-w-md '>
         <h1 className='text-3xl font-bold text-center text-secondary mb-6 font-neue-machina'>Admin Login</h1>
         <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
           <input

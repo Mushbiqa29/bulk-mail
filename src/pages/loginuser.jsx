@@ -22,7 +22,7 @@ const Loginuser = () => {
     <>
    
         <div className='min-h-screen flex items-center justify-center bg-gradient-to-br from-primary to-accent1 p-4'>
-          <div className='bg-white rounded-lg shadow-2xl p-8 w-full max-w-md hover-effect'>
+          <div className='bg-white rounded-lg shadow-2xl p-8 w-full max-w-md '>
             <h1 className='text-3xl font-bold text-center text-primary mb-6 font-neue-machina'>User Login</h1>
             <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
               <input
